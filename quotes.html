@@ -39,9 +39,15 @@
         // Array of 3 favorite website URLs
             var MyWebsites = [
                 "<a href='https://www.youtube.com'>YouTube</a>",
-                "<a href='https://www.facebook.com'>Facebook</a>",
-                "<a href='https://www.github.com'>GitHub</a>"
+                "<a href='https://www.facebook.com'>Facebook</a>", "<a href='https://www.github.com'>GitHub</a>"
             ];
+                // Write out the initial list of links
+                document.write("<h2>Initial Favorite Websites:</h2>");
+            document.write("<ul>");
+            for (var i = 0; i < MyWebsites.length; i++) {
+                document.write(`<li>${MyWebsites[i]}</li>`);
+            }
+            document.write("</ul>");
         </script>
     </p>
     <b></b>

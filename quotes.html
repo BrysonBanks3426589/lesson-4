@@ -3,30 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quote</title>
+    <title>Quotes of the Day</title>
 </head>
- <body>
-    <h1>Quotes of the day</h1>
-<p>
- <script>
-    //5 Quotes 
-    var quotes = [ "The only limit to our realization of tomorrow is our doubts of today. - Franklin D. Roosevelt","The best way to predict the future is to create it. - Peter Drucker","Believe you can and you're halfway there. - Theodore Roosevelt","Success is not final, failure is not fatal: It is the courage to continue that counts. - Winston Churchill","Keep your face always toward the sunshine, and shadows will fall behind you. - Walt Whitman".]
-    // number of choice
-    var yournumber = prompt("Please enter a number");
-    // devide remainder by 5
-    var index = yournumber % 5;
-    // displays quote base on remainder
-    var remainder = quotes[index];
-    document.write(remainder);
-    //My favorite websites 
-    var MyWebsites = [
-      "<a href='https://www.youtube.com'>youtube</a>","<a href='https://www.facebook.com'>Facebook</a>", "<a href='https://www.github.com'>github</a>"];
-    //User favorite website and add to end of website array
-    var userWebsite = prompt("Enter your favorite website URL:");
-    MyWebsites.push(userWebsite);
-    //deletion of the first website 
-    MyWebsites.shift();
- </script>
-</p>
- </body>
+<body>
+    <h1>Quotes of the Day</h1>
+    <p>
+        <script>
+            // Array of 5 quotes
+            var quotes = [
+                "The only limit to our realization of tomorrow is our doubts of today. - Franklin D. Roosevelt",
+                "The best way to predict the future is to create it. - Peter Drucker",
+                "Believe you can and you're halfway there. - Theodore Roosevelt",
+                "Success is not final, failure is not fatal: It is the courage to continue that counts. - Winston Churchill",
+                "Keep your face always toward the sunshine, and shadows will fall behind you. - Walt Whitman"
+            ];
+
+            // Prompt the user to enter a number
+            var yournumber = prompt("Please enter a number");
+
+            // Calculate the remainder when divided by 5
+            var index = yournumber % 5;
+
+            // Display the corresponding quote
+            var remainder = quotes[index];
+            document.write(`<div><strong>Quote of the Day:</strong> ${remainder}</div>`);
+
+            // Array of 3 favorite website URLs
+            var MyWebsites = [
+                "<a href='https://www.youtube.com'>YouTube</a>",
+                "<a href='https://www.facebook.com'>Facebook</a>",
+                "<a href='https://www.github.com'>GitHub</a>"
+            ];
+
+            // Write out the initial list of links
+            document.write("<h2>Initial Favorite Websites:</h2>");
+            document.write("<ul>");
+            for (var i = 0; i < MyWebsites.length; i++) {
+                document.write(`<li>${MyWebsites[i]}</li>`); }
+            document.write("</ul>");
+
+            // Prompt the user to enter their favorite website
+            var userWebsite = prompt("Enter your favorite website URL:");
+
+            // Add the user's website to the end of the array
+            MyWebsites.push(`<a href='${userWebsite}'></a>`);
+
+            // Delete the first website from the array
+            MyWebsites.shift();
+
+            // Write out the revised list of links
+            document.write("<h2>Revised Favorite Websites:</h2>");
+            document.write("<ul>");
+            for (var j = 0; j < MyWebsites.length; j++) {
+                document.write(`<li>${MyWebsites[j]}</li>`);
+            }
+            document.write("</ul>");
+        </script>
+    </p>
+</body>
 </html>

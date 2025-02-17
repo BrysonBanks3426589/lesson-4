@@ -18,8 +18,15 @@
     // displays quote base on remainder
     var remainder = quotes[index];
     document.write(remainder);
+    //My favorite websites 
+    var MyWebsites = [
+      "<a href='https://www.youtube.com'>youtube</a>","<a href='https://www.facebook.com'>Facebook</a>", "<a href='https://www.github.com'>github</a>"];
+    //User favorite website and add to end of website array
+    var userWebsite = prompt("Enter your favorite website URL:");
+    MyWebsites.push(userWebsite);
+    //deletion of the first website 
+    MyWebsites.shift();
  </script>
 </p>
-
-
  </body>
+</html>

@@ -9,7 +9,7 @@
     <h1>Quotes of the Day</h1>
     <p>
         <script>
-            // Array of 5 quotes
+        // Array of 5 quotes
             var quotes = [
                 "The only limit to our realization of tomorrow is our doubts of today. - Franklin D. Roosevelt",
                 "The best way to predict the future is to create it. - Peter Drucker",
@@ -18,38 +18,51 @@
                 "Keep your face always toward the sunshine, and shadows will fall behind you. - Walt Whitman"
             ];
 
-            // Prompt the user to enter a number
+        // Prompt the user to enter a number
             var yournumber = prompt("Please enter a number");
 
-            // Calculate the remainder when divided by 5
+        // Calculate the remainder when divided by 5
             var index = yournumber % 5;
 
-            // Display the corresponding quote
+        // Display the corresponding quote
             var remainder = quotes[index];
             document.write(`<div><strong>Quote of the Day:</strong> ${remainder}</div>`);
 
-            // Array of 3 favorite website URLs
+           
+
+            
+        </script>
+    </p>
+    <b></b>
+    <p>
+        <script>
+        // Array of 3 favorite website URLs
             var MyWebsites = [
                 "<a href='https://www.youtube.com'>YouTube</a>",
                 "<a href='https://www.facebook.com'>Facebook</a>",
                 "<a href='https://www.github.com'>GitHub</a>"
             ];
 
-            // Write out the initial list of links
+        // Write out the initial list of links
             document.write("<h2>Initial Favorite Websites:</h2>");
             document.write("<ul>");
             for (var i = 0; i < MyWebsites.length; i++) {
-                document.write(`<li>${MyWebsites[i]}</li>`); }
+                document.write(`<li>${MyWebsites[i]}</li>`);
+            }
             document.write("</ul>");
-
-            // Prompt the user to enter their favorite website and add at the end
+        </script>
+    </p>
+    <b></b>
+    <p>
+        <script>
+        // Prompt the user to enter their favorite website and add at the end
             var userWebsite = prompt("Enter your favorite website:");
             MyWebsites[3] = yourWebsite;
 
-            // Delete the first website from the array
+        // Delete the first website from the array
             MyWebsites.shift();
 
-            // Write out the revised list of links
+        // Write out the revised list of links
             document.write("<h2>Revised Favorite Websites:</h2>");
             document.write("<ul>");
             for (var j = 0; j < MyWebsites.length; j++) {
@@ -58,5 +71,6 @@
             document.write("</ul>");
         </script>
     </p>
+
 </body>
 </html>

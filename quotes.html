@@ -42,11 +42,9 @@
                 document.write(`<li>${MyWebsites[i]}</li>`); }
             document.write("</ul>");
 
-            // Prompt the user to enter their favorite website
-            var userWebsite = prompt("Enter your favorite website URL:");
-
-            // Add the user's website to the end of the array
-            MyWebsites.push(`<a href='${userWebsite}'></a>`);
+            // Prompt the user to enter their favorite website and add at the end
+            var userWebsite = prompt("Enter your favorite website:");
+            MyWebsites[3] = yourWebsite;
 
             // Delete the first website from the array
             MyWebsites.shift();
